@@ -1,45 +1,63 @@
 # An Analysis of Kickstarter Campaigns
-Analysis on kickstarter data for Louise
 
-## Goal
-Help Louise make informed decisions on feasible kickstarter campaign based on a collection of different information
+## Overview of Project
 
-## Analysis Overview
+There are many factors that influence whether or not a campagin/project will be successful, will fail or be cancelled, such as monetary conrtibutions and backers, location, and launch date, to name a few. Louise aims to create a successful play ‘Fever’ and considers reviewing and analyzing data from past campaigns, zoning into the cateogry theather, specifically 'plays', to make an informed decision to increase the chance of success for her campaign. The analysis will provide insights as to potentially the time period that increases the probability of success and how funding goals relates to the project outcome. 
 
-- Calculate pertinent information such as % of project funded (in $), average donation, and recognizable time formats.
-- Allow sorting by colour to immediately identify project outcome and 
-- Filter data to specifically identify 'failed' and 'successful' US campaigns
-- Create pivot tables to allow ease of data overview/analysis of different categories/subcategories; allow country filters 
-- Create relevant charts including box plots to identfy outilers
-- Calculate descritpive statistics
+### Purpose
+ - Determine potentially the best time, if any, to release a theater campaign to attain success, and to determine if any particular period should be avoided to prevent failure or cancellation
+ - Investigate how the funding goal affects the outcome. In other words, is there any relation between the outcomes ‘successful’, failed’ and ‘cancelled’, and funding goals.
+
+## Analysis and Challenges 
+
+### Analysis of Outcomes Based on Launch Date
+
+The following steps were utilized in analyzing the data:
+ 1. A pivot table was created to investigate how the different outcomes were related to the months of the year. Specifically, the theater category was filtered. The data was also sorted in descending order. The final table is presented in the image below 
+ 2. A line chart was then created to visualize the data 
+
+![image](https://user-images.githubusercontent.com/92636438/139605355-5301ad16-9c37-491b-be9e-bfc55d00a017.png)
+
+
+
+
+### Analysis of Outcomes Based on Goals
+
+This analysis counts the number of successful, failed and cancelled plays and arranges it according to funding goals. The following steps were utilized in analyzing the data:
+
+ 1. A range was created for the funding goal. The number of outcomes for ‘successful’, ‘failed’ and ‘canceled’ falling into each range was then counted. The Countifs() function in excel was utilized to do the analysis. As an example, the code used to count the number of failed plays in the range $20,000 to $24,999 is shown in the image below.
+ 2. The total number for each range was then calculated and percentage of each outcome within the different ranges were then calculated
+ 3. A line chart was constructed for the outcome based on goals
+ 
+![image](https://user-images.githubusercontent.com/92636438/139605724-6b1b2dca-c016-408a-ab2a-27ae60f36cad.png)
+
+![image](https://user-images.githubusercontent.com/92636438/139607076-3f62ccd6-3f4f-45d1-bbda-2f32c99f71ef.png)
+
+
+
+### Challenges
+
+The main challenge in completing the task was to accurately write the 'CountIFs' code. Since the range was constantly changing and or the outcome variable, then it wasn't a simple case of writting the code in the first cell then dragging the code/function. There was always one variable that needed to be updated. Still trying to figure out the more efficient solution
+
+## Results
+
+#### Theater Outcomes by Launch Date
+
+    (With reference to the Theater Outcomes vs Launch graph (see resources folder))
+
+Two conclusions that can be drawn about Theater Outcomes by Launch Date are:
+
+  1. The probability of a successful outcome is highest during the period April to August, peaking in May.
+  2. The number of failed outcomes is generally steady throughout the year, averaging around 41, and not necessarily affected by date. On the graph, this can be visualized from the line graph fluctuating only slightly around the count number 40. Additionally, one can observe that there is no distinct peak and or deviation when compared to the successful graph for one to conclusively state a time period to avoid to prevent failure. In addition, cancelled outcomes aren’t affected by date.
+
+#### Outcomes Based on Goals
+
+    (With reference to the Outcomes vs goal graph (see resources folder))
     
+It can be concluded that in general, plays will be successful for funding goals less than $19,999. Further, the percent of success generally decreases as the funding goals increases. The opposite is true percent for failed outcomes; that is, the rate of failure generally increases as the funding goals increases. However, there is a funding goal between the approximate 35000 to 44999 range where the general pattern is not observed, and the percent of success is higher than failure. Noteworthy, cancellations are not dependent on funding goals
 
-## Result Overview
+#### Recommendations
 
-Note: In general, worksheets (in the provided excel file) are named based on the specific analysis conducted
-
-The following information identify specifics with respect to the worksheet
-  - Edinburgh Research - reflects pertinent information based on Louise favourite plays 
-  - Descriptive statistics - refects information relative **ONLY** to US 'failed' and 'successful' campaigns
-  - The Box plot is specific to Great Britian Musical Campaign
-
-    ### Major Findings
-    
-    1. Theater and music have the highest success rate compared to other categories, as depicted below in the figure below
-    
-<img width="301" alt="Parent Category Outcomes" src="https://user-images.githubusercontent.com/92636438/139512616-de0f4144-b73e-4cf1-928c-a5a17035b527.png">    
-   
-   2. Successful campaigns are more likely to occur in the spring/summer season, specifically between the months of April to July, as shown in the figure below 
-    
-<img width="298" alt="OutcomesVs Date of Creation" src="https://user-images.githubusercontent.com/92636438/139512685-f06a0fe5-b551-4827-a81e-447f45915fef.png">
-
-### Recommendations
-
-1. Louise should consider theater and music, specifically the sub-categories 'plays' and 'rock' respectively, if she wish to conduct a successful kickstarter campaign, especifically if she wishes to run the campaigns in the US or Great Britian.
-2. The probabily of running a successful Kickstater campaigns is highest in May followed by June.
-3. In the US, the average money pledged for successful campaigns is about $5602, above the mean goal of $5049
-
-
-#### Additional Notes
-1. The workbook conatins an 'Original Data'  and 'Data Analyze' worksheet. The later conatins **ALL** data of the original plus some necessary calculation
-    - _Note: changing data in this worksheet may compromise other worksheets._
+ 1. It would be interesting to know the factors that influence cancellation so it may be worthwhile investigating outcomes (either as a count or %) against category (and or subcategory for a deeper analysis) and constructing a bar graph.
+ 2. Another factor which may have a significant impact on the outcome would be number of backers. So creating a table and or charting outcomes vs backers (possibly in a range) could be constructed.
+ 3. If Louise wishes to create a successful play, she should also consider the country. Investigating outcomes based on location and on specific categories should be done.
