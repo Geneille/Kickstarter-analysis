@@ -43,7 +43,8 @@ The main challenge in completing the task was to accurately write the 'CountIFs'
 
 #### Theater Outcomes by Launch Date
 
-    (With reference to the Theater Outcomes vs Launch graph (see resources folder))
+![image](https://user-images.githubusercontent.com/92636438/164970561-09a8095e-01cf-4cd2-ae76-259d588f34c0.png)
+
 
 Two conclusions that can be drawn about Theater Outcomes by Launch Date are:
 
