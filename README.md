@@ -1,14 +1,23 @@
 # An Analysis of Kickstarter Campaigns
 
-## Overview of Project
+## Overview and Objectives
 
-There are many factors that influence whether or not a campagin/project will be successful, will fail or be cancelled, such as monetary conrtibutions and backers, location, and launch date, to name a few. Louise aims to create a successful play ‘Fever’ and considers reviewing and analyzing data from past campaigns, zoning into the cateogry theather, specifically 'plays', to make an informed decision to increase the chance of success for her campaign. The analysis will provide insights as to potentially the time period that increases the probability of success and how funding goals relates to the project outcome. 
+There are many factors that influence whether or not a campagin will be successful, will fail or will be cancelled, such as monetary conrtibutions and backers, location, and launch date, to name a few. Reviewing and analyzing data from past campaigns can aid investors and campaign managers in making informed decision to increase the likelihood of success. 
 
-### Purpose
- - Determine potentially the best time, if any, to release a theater campaign to attain success, and to determine if any particular period should be avoided to prevent failure or cancellation
- - Investigate how the funding goal affects the outcome. In other words, is there any relation between the outcomes ‘successful’, failed’ and ‘cancelled’, and funding goals.
+Given a dataset with over 4000 campaign projects, the aim of this project was to analyze the data to determine the factors that can potentially contribute to a successful theater play. Specifically, the project aimed to:
 
-## Analysis and Challenges 
+* determine potentially the best time, if any, to release a theater campaign to attain success, and subsequently to determine if any particular period should be avoided to prevent failure or cancellation
+* investigate how the funding goal affects the outcome. In other words, is there any relation between the outcomes ‘successful’, failed’ and ‘cancelled’, and funding goals.
+
+## Analysis
+
+### Data Preparation and Cleaning
+
+The initial dataset contains information such as funding goal, pledged monetary contributions and the numbers of backers. Vital to the analysis is the average donations (pledged) which was calculated from the two later categories. Since some campaigns had no backers, the "IFERROR" function in Excel was used to debugg the error as shown in the figure below.
+
+The original dataset contains information about each campaign in categories which was divided into specific categories since the scope of this project was to focus on theater plays. This is illustrated in the figure below.
+
+Another valuable piece of data is the length of fundraising campaigns. Is the length of a campaign correlated with its success?  The provided data was in Unix timestamps and this was converted to a more readable format as shown in the figure below. 
 
 ### Analysis of Outcomes Based on Launch Date
 
