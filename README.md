@@ -49,13 +49,9 @@ This analysis counts the number of successful, failed and cancelled plays and ar
 
 ![image](https://user-images.githubusercontent.com/92636438/139607076-3f62ccd6-3f4f-45d1-bbda-2f32c99f71ef.png)
 
+ ![image](https://user-images.githubusercontent.com/92636438/164970678-0bfceb89-045e-4e5a-9d66-b4061f42fdee.png)
 
-## Results
-
-#### Theater Outcomes by Launch Date
-
-
-
+## Conclusion and Recommendations
 
 Two conclusions that can be drawn about Theater Outcomes by Launch Date are:
 
@@ -65,8 +61,6 @@ Two conclusions that can be drawn about Theater Outcomes by Launch Date are:
 
 
 #### Outcomes Based on Goals
-
- ![image](https://user-images.githubusercontent.com/92636438/164970678-0bfceb89-045e-4e5a-9d66-b4061f42fdee.png)
     
 It can be concluded that in general, plays will be successful for funding goals less than $19,999. Further, the percent of success generally decreases as the funding goals increases. The opposite is true percent for failed outcomes; that is, the rate of failure generally increases as the funding goals increases. However, there is a funding goal between the approximate 35000 to 44999 range where the general pattern is not observed, and the percent of success is higher than failure. Noteworthy, cancellations are not dependent on funding goals
 
