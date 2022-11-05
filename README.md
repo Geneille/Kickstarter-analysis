@@ -34,33 +34,26 @@ The following steps were utilized in analyzing the data:
  1. A pivot table was created to investigate how the different outcomes were related to the months of the year, specifically for the theater category. The final table is presented in the image below 
  2. A line chart was then created to visualize the data 
 
-![image](https://user-images.githubusercontent.com/92636438/139605355-5301ad16-9c37-491b-be9e-bfc55d00a017.png)
 
-![image](https://user-images.githubusercontent.com/92636438/164970561-09a8095e-01cf-4cd2-ae76-259d588f34c0.png)
+<img width="711" alt="Screenshot_20221105_011055" src="https://user-images.githubusercontent.com/92636438/200132581-f54f1c7d-982c-40d1-bb5b-8fe0566b913e.png">
+
 
 ### Outcomes Based on Goals
 
 This analysis counts the number of successful, failed and cancelled plays and arranges it according to funding goals. The following steps were utilized in analyzing the data:
 
- 1. A range was created for the funding goal. The number of outcomes for ‘successful’, ‘failed’ and ‘canceled’ falling into each range was then counted. The Countifs() function in excel was utilized to do the analysis. As an example, the code used to count the number of failed plays in the range $20,000 to $24,999 is shown in the image below.
+ 1. A range was created for the funding goal. The number of outcomes for ‘successful’, ‘failed’ and ‘cancelled’ falling into each range was then counted. The Countifs() function in excel was utilized to do the analysis. As an example, the code used to count the number of failed plays in the range $20,000 to $24,999 is shown in the image below.
  2. The total number for each range was then calculated and percentage of each outcome within the different ranges were then calculated
  3. A line chart was constructed for the outcome based on goals
 
+<img width="790" alt="Screenshot_20221105_011256" src="https://user-images.githubusercontent.com/92636438/200132723-0c8bbda1-0254-41bf-baef-406eb646d239.png">
 
-![image](https://user-images.githubusercontent.com/92636438/139607076-3f62ccd6-3f4f-45d1-bbda-2f32c99f71ef.png)
+<img width="493" alt="Screenshot_20221105_011604" src="https://user-images.githubusercontent.com/92636438/200132800-1ef5d908-95dc-41a3-9e8f-3b2a7d3a5ce2.png">
 
- ![image](https://user-images.githubusercontent.com/92636438/164970678-0bfceb89-045e-4e5a-9d66-b4061f42fdee.png)
 
 ## Conclusion and Recommendations
 
-Two conclusions that can be drawn about Theater Outcomes by Launch Date are:
-
-  1. The probability of a successful outcome is highest during the period April to August, peaking in May.
-  2. The number of failed outcomes is generally steady throughout the year, averaging around 41, and not necessarily affected by date. On the graph, this can be visualized from the line graph fluctuating only slightly around the count number 40. Additionally, one can observe that there is no distinct peak and or deviation when compared to the successful graph for one to conclusively state a time period to avoid to prevent failure. In addition, cancelled outcomes aren’t affected by date.
-
-
-
-#### Outcomes Based on Goals
+From the analysis of outcomes based on launch date, it can be deduced that the probability of a successful outcome is highest during the period April to August, peaking in May. Aditionally, the number of failed outcomes is generally steady throughout the year, averaging around 41, and not necessarily affected by date. On the graph, this can be visualized from the line graph fluctuating only slightly around the count number 40. It can also be observed that there is no distinct peak and or deviation when compared to the successful graph for one to conclusively state a time period to avoid to prevent failure. In addition, cancelled outcomes aren’t affected by date.
     
 It can be concluded that in general, plays will be successful for funding goals less than $19,999. Further, the percent of success generally decreases as the funding goals increases. The opposite is true percent for failed outcomes; that is, the rate of failure generally increases as the funding goals increases. However, there is a funding goal between the approximate 35000 to 44999 range where the general pattern is not observed, and the percent of success is higher than failure. Noteworthy, cancellations are not dependent on funding goals
 
